@@ -15,4 +15,5 @@ public class LoginRequest {
     String password;
     String email;
     String anhkietDeptrai;
+    String anhBin;
 }
