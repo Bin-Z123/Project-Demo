@@ -36,6 +36,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/admin/**","/api/user/**").authenticated()
                         .anyRequest().permitAll()
+
+
                 )//Config login
                 .formLogin(AbstractHttpConfigurer::disable).httpBasic(AbstractHttpConfigurer::disable)
                 ;
